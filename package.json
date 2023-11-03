@@ -1,0 +1,22 @@
+{
+  "name": "jspractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cutshort-node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subrata-aurionpro/jsPractice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subrata-aurionpro/jsPractice/issues"
+  },
+  "homepage": "https://github.com/subrata-aurionpro/jsPractice#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
