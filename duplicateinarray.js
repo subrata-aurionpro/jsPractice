@@ -1,9 +1,9 @@
-const arr = "this is a great day ever";
+const arr = "this is a great day ever ssssssssssssssssssssssss";
 
 // find duplicate of elements
 let dataArr = arr.split("");
 let hashmap = {}
-
+// console.log(dataArr);
 dataArr.forEach(it=>{
     // console.log(it in hashmap,it,hashmap,"shubro")
     // hashmap={t}
@@ -14,7 +14,17 @@ dataArr.forEach(it=>{
     hashmap[it] =1;
     }
 })
-
+let mm =0;
+let chars;
+for(let max in hashmap){
+    console.log();
+    if (hashmap[max] > mm) {
+        mm = hashmap[max];
+        chars = max;
+    }
+    
+}
+console.log(chars,mm, " mm");  
 console.log(hashmap," ans");  // ans
 
 
@@ -31,7 +41,6 @@ let ansData = wordArr.map((acc,cv,l)=>{
     if (it in hashmap) {
         hashmap[it]++
     }else{
-
         hashmap[it] = 1;
     }
    });
@@ -39,7 +48,7 @@ let ansData = wordArr.map((acc,cv,l)=>{
    for (let key in hashmap) {
     if (hashmap[key]>1) {
        final += acc;
-        
+        // console.log(acc, [key])
     }
    }
 });
