@@ -6,7 +6,20 @@
 const input = ["eat", "tea", "tan", "ate", "nat", "bat", "abt"]
 // Output
 // Output= [ ["ate", "eat","tea"], ["nat","tan"], ["bat"] ]
-
+var outputMap =[];
+for (let h = 0; h < input.length; h++) {
+    let element = input[h].split('');
+    element.sort();
+    var s = element.join('')
+    if (outputMap == null) {
+        var x = [];
+        x.push(input[h])
+        outputMap[s] = x
+    } else {
+        outputMap[s].push(input[h]);
+    }
+}
+console.log(outputMap);
 var mapInput = [];
 for(var i=0; i<input.length; i++){
     var arrStr = input[i].split('');
